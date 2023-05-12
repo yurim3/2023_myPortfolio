@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import myPortFolio from "img/myPortFolio.jpg";
 
-function App() {
+function LeftSection() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="left-section"
+      style={{ backgroundColor: "#081B4B", width: "400px" }}
+    >
+      <img src={myPortFolio} alt="My Portfolio" />
+      {/* ... */}
     </div>
   );
 }
 
-export default App;
+export default LeftSection;
